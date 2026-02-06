@@ -1,12 +1,12 @@
 import socket
 
-host="127.0.0.1"
+host="bancocn.com"
 
 for p in range(1,1025):
     s=socket.socket()
-    s.settimeout(0.5)
+    s.settimeout(0.01)
     try:
-        s.connect((host,p));print(f"Porta {p} aberta")
+        s.connect((host,p));print(f"{host} -> Porta {p} aberta")
     except:
         pass
     s.close()
