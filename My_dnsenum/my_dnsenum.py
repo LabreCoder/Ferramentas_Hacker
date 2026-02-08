@@ -1,7 +1,7 @@
 import dns.resolver
 
 def dns_enum(domain):
-    records = ["A", "AAAA", "MX", "NS", "TXT"]
+    records = ["A", "AAAA", "MX", "NS", "TXT"] # Aqui podemos ao invés de utilizar uma lista direta no python, podemos ler um arquivo de listas para testar os subdominios.
 
     for record in records:
         try:
